@@ -1,0 +1,34 @@
+﻿<div class="panel panel-primary">
+    <div class="panel-heading" style="font-size:large">
+        <div style="color:white">{{ vm.movie.title }}</div>
+    </div>
+
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-2">Description: </div>
+            <div class="col-md-10">{{ vm.movie.description }}</div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">Director: </div>
+            <div class="col-md-10">{{ vm.movie.director }}</div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">Release Date: </div>
+            <div class="col-md-10">{{ vm.movie.releaseDate | date}}</div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">Rating: </div>
+            <div class="col-md-10">{{ vm.movie.mpaa | uppercase }}</div>
+        </div>
+    </div>
+
+    <div class="panel-footer">
+        <a class="btn btn-default"
+           ng-href="#searchByTitle"
+           style="width:80px">
+            <i class="glyphicon glyphicon-chevron-left"></i>
+            Back
+        </a>
+    </div>
+
+</div>

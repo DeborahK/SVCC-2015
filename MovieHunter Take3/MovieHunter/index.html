@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>InStep Movie Hunter</title>
+
+    <!-- Style sheets -->
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+</head>
+
+<body ng-app="movieHunter">
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <a class="navbar-brand" href="#">InStep Movie Hunter</a>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle"
+                        data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar">a</span>
+                    <span class="icon-bar">b</span>
+                    <span class="icon-bar">c</span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a ng-href="#searchByTitle">Search by Title</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div ng-view></div>
+    </div>
+
+    <!-- Library Scripts -->
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="Scripts/angular-resource.js"></script>
+
+    <!-- Application Scripts -->
+    <script src="app/app.js"></script>
+    <script src="common/common.services.js"></script>
+    <script src="common/movieResource.js"></script>
+
+    <!-- Controllers -->
+    <script src="app/movies/movieListCtrl.js"></script>
+    <script src="app/movies/movieDetailCtrl.js"></script>
+</body>
+</html>

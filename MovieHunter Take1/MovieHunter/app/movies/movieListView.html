@@ -1,0 +1,47 @@
+﻿<div ng-controller="MovieListCtrl as vm">
+    <div style="font-size:large">{{::vm.title}}</div>
+
+    <div>
+        <div>
+            <div>Filter by:</div>
+            <div><input type="text" ng-model="listFilter" /></div>
+        </div>
+
+        <div ng-show="listFilter">
+            <h3>Movies filtered by: {{listFilter}}</h3>
+        </div>
+
+        <div >
+            <table ng-if="vm.movies.length">
+                <thead>
+                    <tr>
+                        <td>
+                            <button type="button"
+                                    ng-click="vm.toggleImage()">
+                                {{vm.showImage ? "Hide" : "Show"}} Poster
+                            </button>
+                        </td>
+                        <td>Title</td>
+                        <td>Director</td>
+                        <td>Release Date</td>
+                        <td>Rating</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="movie in vm.movies | filter : {title:listFilter} | orderBy : 'title'">
+                        <td>
+                            <img ng-show="vm.showImage" style="width:50px;margin:2px"
+                                 ng-src="{{movie.imageurl}}" title="{{movie.title}}">
+                        </td>
+                        <td>
+                            {{ movie.title}}
+                        </td>
+                        <td>{{ movie.director }}</td>
+                        <td>{{ movie.releaseDate | date }}</td>
+                        <td>{{ movie.mpaa | uppercase}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

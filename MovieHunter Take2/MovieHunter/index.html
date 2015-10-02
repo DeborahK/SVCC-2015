@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>InStep Movie Hunter</title>
+
+    <!-- Style sheets -->
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+</head>
+
+<body ng-app="movieHunter">
+    <h1>Movie Hunter</h1>
+
+    <div>
+        <ng-include src="'app/movies/movieListView.html'"></ng-include>
+    </div>
+
+    <!-- Library Scripts -->
+    <script src="Scripts/angular.js"></script>
+
+    <!-- Application Script -->
+    <script src="app/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="app/movies/movieListCtrl.js"></script>
+</body>
+</html>

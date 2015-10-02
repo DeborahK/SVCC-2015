@@ -1,0 +1,29 @@
+﻿--- movieResource service ---
+(function () {
+    "use strict";
+
+    angular
+        .module("common.services")
+        .factory("movieResource",
+                ["$resource",
+                 "appSettings",
+                    movieResource]);
+
+    function movieResource($resource, appSettings) {
+        return $resource(appSettings.serverPath + "/api/movies/:id");
+    }
+}());
+
+--- Calling movieResource.query ---
+        movieResource.query(
+            function (data) {
+                vm.movies = data;
+            });
+
+--- Calling movieResource.get ---
+        vm.movie = '';
+
+        movieResource.get({ id: vm.movieId },
+            function (data) {
+                vm.movie = data;
+            });

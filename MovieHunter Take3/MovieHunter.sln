@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MovieHunter", "http://localhost:64492", "{D60C6C09-4506-4DD6-BE33-2ACEA0B1AAA0}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_64492"
+		Debug.AspNetCompiler.PhysicalPath = "MovieHunter\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_64492\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_64492"
+		Release.AspNetCompiler.PhysicalPath = "MovieHunter\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_64492\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "MovieHunter\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieHunter.API", "MovieHunter.API\MovieHunter.API.csproj", "{4E8BCD84-23BD-4883-B3F4-5A8327C4AA46}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D60C6C09-4506-4DD6-BE33-2ACEA0B1AAA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D60C6C09-4506-4DD6-BE33-2ACEA0B1AAA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D60C6C09-4506-4DD6-BE33-2ACEA0B1AAA0}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{D60C6C09-4506-4DD6-BE33-2ACEA0B1AAA0}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{4E8BCD84-23BD-4883-B3F4-5A8327C4AA46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E8BCD84-23BD-4883-B3F4-5A8327C4AA46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E8BCD84-23BD-4883-B3F4-5A8327C4AA46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E8BCD84-23BD-4883-B3F4-5A8327C4AA46}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
